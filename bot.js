@@ -11,7 +11,10 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', (member) => {
+    console.log('Member added')
     member.roles.add('Class-D')
+    console.log(member.nickname)
+    console.log(member.id)
     member.nickname = "D-" + String(CDnum)
     CDnum += 1
     console.log("Class-D " + `${CDnum}` + " added.")
