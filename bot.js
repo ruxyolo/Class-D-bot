@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
-let token = 'ODAzMjcyMzY3ODM2NDk1ODcy.YA7XsA.gYP-OR8bLXDbJ6iNLo57JtEbelw';
 
 let CDnum = 0000
 
@@ -25,4 +24,4 @@ client.on('guildMemberRemove', (member) => {
 });
 
 
-client.login(token)
+client.login(process.env.token)
