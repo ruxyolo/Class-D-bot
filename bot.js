@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 
-let CDnum = 0000
+let CDnum = 0004
 
 
 client.on('ready', () => {
