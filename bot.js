@@ -5,7 +5,6 @@ const client = new Discord.Client()
 let CDnum = 0000
 
 
-
 client.on('ready', () => {
     console.log('Bot online')
 
