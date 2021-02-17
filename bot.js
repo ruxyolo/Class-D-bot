@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 
 
-let CDnum = 0004
+let CDnum = 0006
 
 
 client.on('ready', () => {
@@ -16,13 +16,14 @@ client.on('guildMemberAdd', (member) => {
     console.log(member.nickname)
     console.log(member.id)
     member.nickname = "D-" + String(CDnum)
+    console.log(member.nickname)
     CDnum += 1
-    console.log("Class-D " + `${CDnum}` + " added.")
+    console.log("Class-D D-" + `${CDnum}` + " added.")
 });
 
 client.on('guildMemberRemove', (member) => {
     CDnum -= 1
-    console.log("Class-D " + `${CDnum}` + " removed.")
+    console.log("Class-D D-" + `${CDnum}` + " removed.")
 });
 
 
