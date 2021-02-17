@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const intents = ["GUILDS", "GUILD_MEMBERS"];
+const client = new Discord.Client({ intents: intents, ws: { intents: intents } });
 
 
 let CDnum = 0006
